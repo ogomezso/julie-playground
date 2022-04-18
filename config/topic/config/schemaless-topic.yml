@@ -1,0 +1,11 @@
+---
+context: "APP"
+prefix: "SANES"
+projects:
+  - name: "CONTRS"
+    topics:
+      - name: "CP_ORDEN_CONTR"
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+          cleanup.policy: "delete"
