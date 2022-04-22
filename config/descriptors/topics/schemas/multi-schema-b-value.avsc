@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "namespace": "com.mycorp.mynamespace",
+  "name": "multiSchemaB",
+  "doc": "Sample schema to help you get started.",
+  "fields": [
+    {
+      "name": "my_field2",
+      "type": "double",
+      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number."
+    },
+    {
+      "name": "my_field3",
+      "type": "string",
+      "doc": "The string is a unicode character sequence."
+    }
+  ]
+}

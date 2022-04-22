@@ -1,0 +1,34 @@
+context: "corp"
+projects:
+  - name: "p1"
+    topics:
+      - name: "recordBackward"
+        dataType: "avro"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+          value.compatibility: "BACKWARD"
+      - name: "recordForward"
+        dataType: "avro"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+          value.compatibility: "FORWARD"
+      - name: "recordFull"
+        dataType: "avro"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+          value.compatibility: "FULL"
+      - name: "recordBackwardTransitive"
+        dataType: "avro"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+          value.compatibility: "BACKWARD_TRANSITIVE"
+      - name: "recordForwardTransitive"
+        dataType: "avro"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+          value.compatibility: "FORWARD_TRANSITIVE"
+      - name: "recordFullTransitive"
+        dataType: "avro"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+          value.compatibility: "FULL_TRANSITIVE"

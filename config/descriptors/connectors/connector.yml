@@ -1,0 +1,22 @@
+context: "corp"
+projects:
+  - name: "connectors"
+    connectors:
+      - principal: "User:Connect1"
+        connectors: 
+          - "jdbc-sink"
+      # artifacts:
+      #   - path: "connect-config/jdbcSink.json"
+      #     server: "connect"
+      #     name: "jdbc-sink"
+      # access-control:
+      #   - principal: "User:Connect1"
+      #     topics:
+      #       read:
+      #         - "corp.dev.p1.connect-test"
+
+        # - principal: "User:vic"
+      # topics:
+      #   read:
+      #     - "topicB"
+

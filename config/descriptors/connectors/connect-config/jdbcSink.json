@@ -1,0 +1,8 @@
+{
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "tasks.max": "1",
+    "topics": "corp.dev.p1.connect-test",
+    "connection.url": "jdbc:sqlite:test.db",
+    "auto.create": "true",
+    "name": "jdbc-sink"
+  }

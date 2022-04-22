@@ -1,0 +1,11 @@
+---
+context: corp
+env: dev
+projects:
+  - name: p1
+    topics:
+      - name: schemaless
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+          cleanup.policy: "compact"

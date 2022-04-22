@@ -1,0 +1,20 @@
+plans:
+  fireAndForget:
+    # Topics that need to move data around without caring about keeping the data
+    alias: "fireAndForget"
+    config:
+      retention.ms: "1"
+      max.message.bytes: "7340116"
+      cleanup.policy: "delete"
+  table:
+    alias: "compact"
+    config:
+      retention.ms: "3600"
+      max.message.bytes: "524294"
+      cleanup.policy: "compact"
+
+  pro:
+    alias: "production"
+    config: 
+      replication.factor: 4
+      

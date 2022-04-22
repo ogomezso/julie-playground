@@ -1,0 +1,16 @@
+---
+context: corp
+env: dev
+projects:
+  - name: p1
+    topics:
+      - name: fireNforget
+        plan: fireAndForget
+        config:
+          replication.factor: "1"
+          num.partitions: "1"
+      - name: compacted
+        plan: table
+        config:
+          replication.factor: "1"
+          num.partitions: "1"

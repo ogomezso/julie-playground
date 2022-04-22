@@ -1,0 +1,13 @@
+{
+    "type": "record",
+    "namespace": "com.mycorp.mynamespace",
+    "name": "multiSchemaKey",
+    "doc": "Sample schema to help you get started.",
+    "fields": [
+        {
+            "name": "id",
+            "type": "int",
+            "doc": "ID of the record"
+        }
+    ]
+}

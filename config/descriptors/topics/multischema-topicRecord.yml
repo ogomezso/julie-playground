@@ -1,0 +1,16 @@
+context: "corp"
+projects:
+  - name: "p1"
+    topics:
+      - name: "multi-schema-topic-record"
+        dataType: "avro"
+        subject.name.strategy: TopicRecordNameStrategy
+        schemas:
+          - value.schema.file: "schemas/multi-schema-a-value.avsc"
+            key.schema.file: "schemas/multi-schema-key.avsc"
+            value.record.type: multiSchemaA
+            key.record.type: multiSchemaKey
+          - value.schema.file: "schemas/multi-schema-b-value.avsc"
+            key.schema.file: "schemas/multi-schema-key.avsc"
+            value.record.type: multiSchemaB
+            key.record.type: multiSchemaKey
