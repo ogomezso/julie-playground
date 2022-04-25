@@ -1,0 +1,20 @@
+context: "corp"
+platform:
+  kafka:
+    rbac:
+    - SystemAdmin:
+      - principal: "User:admin1"
+      - principal: "User:admin2"
+      - principal: "Group:admin_group"
+    - Operator:
+      - principal: "Group:operator_group"
+  kafka_connect:
+    rbac:
+    - SystemAdmin:
+      - principal: "Group:admin_group"
+  schema_registry:
+    rbac:
+    - SystemAdmin:
+      - principal: "Group:admin_group"
+    - Operator:
+      - principal: "Group:operator_group"

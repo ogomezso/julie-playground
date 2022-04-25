@@ -1,0 +1,9 @@
+context: "corp"
+projects:
+  - name: "p1"
+    topics:
+      - name: "record"
+        dataType: "avro"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+# 

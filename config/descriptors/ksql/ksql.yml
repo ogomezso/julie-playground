@@ -1,0 +1,13 @@
+context: "corp"
+projects:
+  - name: "p1"
+    ksql:
+      artifacts:
+        tables:
+          - path: "queries/users.sql"
+            name: "users"
+    topics:
+      - name: "users"
+        config:
+          replication.factor: "1"
+          num.partitions: "2"

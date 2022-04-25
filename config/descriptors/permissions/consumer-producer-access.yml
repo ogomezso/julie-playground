@@ -1,0 +1,19 @@
+
+context: "corp"
+projects:
+  - name: "p1"
+    topics:
+      - name: "consumer"
+        dataType: "avro"
+        consumers:
+          - principal: "User:consumerApp"
+          - principal: "User:consumer2App"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"
+      - name: "producer"
+        dataType: "avro"
+        producers:
+          - principal: "User:producerApp"
+          - principal: "User:producer2App"
+        schemas:
+          value.schema.file: "schemas/record-value.avsc"

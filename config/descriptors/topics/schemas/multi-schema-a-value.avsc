@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "namespace": "com.mycorp.mynamespace",
+  "name": "multiSchemaA",
+  "doc": "Sample schema to help you get started.",
+  "fields": [
+    {
+      "name": "my_field1",
+      "type": "int",
+      "doc": "The int type is a 32-bit signed integer."
+    }
+  ]
+}

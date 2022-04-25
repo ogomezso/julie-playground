@@ -54,9 +54,13 @@ services:
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
 
   connect:
-    image: confluentinc/cp-server-connect:7.0.1
+    # image: confluentinc/cp-server-connect:7.0.1
+    image: localhost/localbuild/connect-file-source:7.0.1
     hostname: connect
     container_name: connect
+    build:
+      context: .
+      dockerfile: Dockerfile
     depends_on:
       - broker
       - schema-registry
